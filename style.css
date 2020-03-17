@@ -1,0 +1,76 @@
+body {
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+}
+
+#banner {
+     height: 100vh;
+     background: #980000;
+}
+
+/* BANNER - CONTENT */
+#text-banner {
+     height: 70vh;
+     background: #6dbe20;
+}
+#img-banner {
+     height: 70vh;
+     background: #290098;
+}
+#banner #arrow-navigator {
+     height: 20vh;
+     background: #c148d1;
+}
+
+
+/* BANNER - NAVBAR */
+#navbar {
+     height: 10vh;
+     background: #21da3f;
+}
+#hamburguer {
+     height: 10vh;
+     background: black;
+}
+#logo {
+     background: #f1ee04;
+}
+#nav1 {
+     background: #980000;     
+}
+#nav2 {
+     background: #6c57ca;
+}
+#nav3 {
+     background: #2dcfb4;
+}
+#nav4 {
+     background: #e05db9;
+}
+#nav5 {
+     background: #da3721;
+}
+
+
+/* AJUSTES DE TAMANHOS DE TELA */
+@media screen and (max-width: 576px) {
+     #banner #contents div {
+          height: 35vh;
+     }
+
+     #banner #navbar {
+          display: none;
+          height: 30%;
+          position: absolute;
+          z-index: 3;
+          width: 100%;
+     }
+}
+
+@media screen and (min-width: 576px) {
+     #banner #navbar {
+          display: flex !important;
+     }
+}
